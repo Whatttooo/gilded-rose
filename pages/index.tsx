@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -15,15 +16,19 @@ export default function Home() {
         <h1 className={styles.title}>Welcome to the Gilded Rose store</h1>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Check out the Store 🏬</h2>
-            <p>Check out our awesome items here</p>
-          </a>
+          <Link href="/store">
+            <a className={styles.card}>
+              <h2>Check out the Store 🏬</h2>
+              <p>Check out our awesome items here</p>
+            </a>
+          </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Contact us 📞</h2>
-            <p>get in touch</p>
-          </a>
+          <Link href="/contact">
+            <a className={styles.card}>
+              <h2>Contact us 📞</h2>
+              <p>get in touch</p>
+            </a>
+          </Link>
         </div>
       </main>
 
