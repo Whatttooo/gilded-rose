@@ -29,7 +29,6 @@ const defaultTheme = themes[0];
 
 const MyApp = ({ Component, pageProps }) => {
   const [currentTheme, setCurrentTheme] = useState<Theme>(defaultTheme);
-  console.log(currentTheme);
   const handleThemeChange = useCallback(
     (theme: Theme) => {
       if (currentTheme.name === theme.name) {

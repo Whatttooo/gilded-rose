@@ -32,7 +32,7 @@ const Nav = ({ onThemeChange }: NavProps) => (
       <Link href="/">
         <a style={{ paddingRight: '10px' }}>Home</a>
       </Link>
-      <Link href="/store/products/[id]">
+      <Link href="/store">
         <a style={{ paddingRight: '10px' }}>Store</a>
       </Link>
       <Link href="/contact">
